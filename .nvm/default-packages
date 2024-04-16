@@ -1,0 +1,9 @@
+@pilchd/fle-cli
+browser-sync
+nodemon
+npm-check-updates
+tsx
+typescript
+typescript-language-server
+vscode-langservers-extracted
+yaml-language-server

@@ -1,0 +1,37 @@
+[advice]
+    detachedHead = false
+[alias]
+    whoami = config user.name
+    whoarei = config user.email
+    l = log --pretty=reference --graph
+    lag = log --pretty=fuller --graph --abbrev-commit --stat
+    lagg = log --pretty=fuller --graph --abbrev-commit --stat --first-parent
+    redo = commit --amend --no-edit
+    reredo = !git add --all && git commit --amend --no-edit
+    rereredo = !git add --all && git commit --amend --no-edit && git push -f
+    s = status -sb
+    ss = status
+[color]
+    ui = auto
+[core]
+    excludesFile = ~/.gitignore
+;[diff]
+;    tool = code
+;[difftool]
+;    prompt = false
+;[difftool "code"]
+;    cmd = code --wait --diff $LOCAL $REMOTE
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    allowedSignersFile = ~/.ssh/allowed_signers
+[init]
+    defaultBranch = main
+[pull]
+    rebase = true
+[push]
+    followTags = true
+[user]
+    name = Nic Pilcher
+    email = nic@pilchd.com
+    signingKey = ~/.ssh/id_ed25519
