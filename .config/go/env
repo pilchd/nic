@@ -1,0 +1,2 @@
+GOBIN=/home/nic/.local/bin/go/
+GOPATH=/home/nic/.local/share/go/
