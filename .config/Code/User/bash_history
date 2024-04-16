@@ -1,0 +1,1476 @@
+pwd
+git s
+git status
+git reset --hard HEAD
+rm -r agnes
+rm -r betty
+rm -r api
+git reset --hard HEAD
+git s
+git ss
+git switch preview/llayer 
+git switch -c pilchd-base
+git push --set-upstream origin pilchd-base
+git remote show
+git remote ls
+git remote
+git remote show origin
+git remote prune
+git remote prune origin
+git branch
+git branch -D preview/rest
+git branch -D show
+git branch -D pilchd
+git branch ls
+git branch
+git branch -A
+git branch -a
+git branch -D ls
+git branch -a
+git fetch
+git fetch --prune
+git branch -a
+git switch preview/documentation
+git switch main
+git pull
+git status
+git branch
+git status
+git branch
+git switch preview/resolvers
+git switch -c emily
+git lag
+git lagg
+git l
+git lag
+git l
+g l
+git rebase -i 31c7f3b
+git rebase --abort
+git rebase -i 31c7f3b
+git rebase --abort
+git rebase -i 31c7f3b
+git rebase --skip
+git ss
+git add frontend/docs/demo.html
+git status
+git rebase --continue
+git ss
+git rm api/src/handlers/handlers.mts
+git ss
+git rebase --continue
+git ss
+git add frontend/styles/demo.css
+git ss
+git rebase --continue
+git ss
+git rm api/src/handlers/graphql/schema.mts
+git ss
+git rebase --continue
+git ss
+git rm api/src/handlers/headers.{mjs,mts}
+git ss
+git rebase --continue
+git ss
+git rm api/src/handlers/headers.{mjs,mts}
+git rebase --continue
+git ss
+git add frontend/registration.html
+git ss
+git rebase --continue
+git ss
+git rm api/src/handlers/headers.mts
+git rebase --continue
+git l
+git commit --amend -m "unknown2"
+git l
+git s
+git push --set-upstream origin emily
+git l
+cd ..
+pwd
+cd
+ls
+echo google.com/
+echo https://google.com.
+echo https://google.com/
+g l
+git rebase -i 0a2be6c
+git rebase --abort
+git rebase -i 0a2be6c
+git ss
+g l
+git log
+git lag
+git reset 0a2be6c
+git ss
+git status
+git add frontend/docs
+git status
+git whoami
+git whoarei
+git commit
+git status
+g ss
+git diff
+git difftool
+g ss
+git restore api/src/handlers/handlers.ts api/src/index.ts frontend/styles/demo.css
+man git restore
+git s
+g s
+git ss
+cat ~/.gitconfig 
+git difftool
+git status
+git add api/src/handlers/graphql/types/state.ts
+git s
+man git status
+g s
+git ss
+git restore -S api/src/handlers/graphql/types/state.ts
+git ss
+g s
+git add api/src/handlers/graphql/types/filters.ts
+git s
+g ss
+git commit -m "state filter"
+g l
+g ss
+git difftool
+git commit -am "GraphQL documentation"
+g l
+git ss
+git rebase --continue
+git lag
+g l
+git reset adb0fac
+g s
+what
+hush
+g s
+pwd
+gs 
+g s
+git status
+git restore .github/workflows/AwsUndeploy.yaml
+rm dist/frontend/graphiql.html 
+git lag
+g s
+git difftool
+rm api/src/handlers/approve.ts dist/frontend/graphql.html dist/frontend/registration.html frontend/static/templates/registration.html 
+g s
+git restore api/src/handlers/approve.ts
+git restore dist/frontend/graphql.html
+git restore dist/frontend/registration.html
+git restore frontend/static/templates/registration.html
+g s
+git diff api/src/handlers/graphql/types/filters.ts
+git status
+rm frontend/registration.html
+rm frontend/docs/documentation.html
+git status
+git difftool
+git commit -am "program technology resolver"
+git l
+g l
+git rebase -i 0a2be6c
+g l
+git lag
+g l
+git commit --amend --author='eaberger2 <eaberger2@wisc.edu>' --date='2023-06-10' --no-edit
+git rebase --continue
+git commit --amend --author='eaberger2 <eaberger2@wisc.edu>' --date='2023-07-08' --no-edit
+git rebase --continue
+git commit --amend --author='eaberger2 <eaberger2@wisc.edu>' --date='2023-07-09' --no-edit
+g s
+g ss
+git rebase --edit-tofo
+git rebase --edit-todo
+git rebase --continue
+git commit --amend --author='eaberger2 <eaberger2@wisc.edu>' --date='2023-07-09' --no-edit
+git rebase --continue
+git lag
+g l
+git rebase -i 0a2be6c
+g l
+git rebase -i 0a2be6c
+git lag
+git switch preview/resolvers
+g l
+g s
+git add api/src/handlers/graphql/types/technology.ts
+git status
+git redo
+git switch preview/resolvers
+git switch -c emily-base
+git push --set-upstream origin emily-base
+git branch -D preview/resolvers
+git branch -a
+git remote origin prune
+git remote prune origin
+git branch -a
+git switch emily
+git push -f
+git rebase -i 36a6bfa
+git status
+git add frontend/static/styles/demo.css
+git status
+git rebase --continue
+git push -f
+cherrypie
+git rebase -i 3028379d7fc2cef26a42807aa668a3b25c04c8dc
+git rebase -i d5975b51f816923238daf4d9cd13d7d34fa9f0fe
+git status
+git add frontend/static/styles/demo.css
+git s
+git commit --amend --no-edit
+g s
+g ss
+git rebase --continue
+git lag --follow -- frontend/static/styles/docs.css
+git lag --follow -- frontend/docs/demo.html
+man git switch
+git switch -d d0dac846b615c975d0b4304915b83d567e8099f4
+git switch -d HEAD~1
+git switch emily
+git rebase -i 8768414
+git status
+git add --all
+git commit --amend --no-edit
+git rebase --continue
+git lag --follow -- frontend/docs/demo.html
+git rebase -i d5975b51f816923238daf4d9cd13d7d34fa9f0fe
+git lag
+git rebase -i 200c1ac
+git rebase --abort
+git la
+git lag
+git rebase -i 200c1ac
+git rebase --abort
+git lag
+git rebase -i 200c1ac
+git status
+git add --all
+git status
+git commit --amend --no-edit
+git rebase --continue
+g s
+git add --all
+git commit --amend --no-edit
+git status
+git rebase --continue
+git status
+git rm frontend/docs/demo.html
+git status
+git add --all
+git status
+git rebase --continue
+git push -f
+git lag --follow -- frontend/static/templates/postVerify.html
+g l
+git rebase -i 200c1ac
+g s
+git add frontend/static/templates/postVerify.html
+git commit --amend --no-edit
+git rebase --continue
+git push -f
+git rebase -i 586572807fc6c4e66ed03da58ed8e9075b0ca6d4
+git status
+git add frontend/postVerify.html
+git commit --amend --no-edit
+git rebase --continue
+git status
+git rm dist/frontend/postVerify.html
+git status
+git rebase --continue
+git push -f
+git fetch
+git switch emily
+git switch -c pilchd
+git push --set-upstream origin pilchd
+echo
+git rebase -i 586572807fc6c4e66ed03da58ed8e9075b0ca6d4
+git status
+git add frontend/styles/docs.css 
+git commit --amend --no-edit
+git status
+git rebase --continue
+git status
+git rm frontend/static/styles/docs.css
+git ss
+git rebase --continue
+git switch -C emily
+git push -f
+git switch pilchd
+git push -f
+git diff pilchd..emily
+git push
+git switch emily
+git push emily
+git diff pilchd..emily
+git diff pilchd...emily
+git switch pilchd
+cd agnes/
+ls
+cd src/
+cd ..
+g ss
+g s
+git add --all
+git satus
+git status
+git commit -m "Restructure ecosystem for code-workspace"
+test test
+http --version
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/testing001
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/testing001/ap
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/testing001/api
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/testing001/api/graphql
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/testing001/api/graphql/
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/testing001/api/graphql/something
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/testing001/api/grapql/something
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/testing001/api/graphql/something
+
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/testing001/api/graphql/something
+ls
+git status
+while true; do tput cols; sleep .2; done
+echo
+nvm use 'lts/*'
+npm install -g npm-check-updates
+ncu
+node --version
+npm install
+npm install kysely
+npm install
+npm install kysely
+npm install --save-dev kysely-codegen
+kysely-codegen
+npx kysely-codegen
+npm install --save-dev mysql2
+npx kysely-codegen
+npx kysely-codegen --help
+act -l
+cd ..
+cherrypie 
+git branch -a
+git status
+cd ..
+git ss
+git add cf/*
+git status
+git commit -m "Double Lambda/API deployment only on arbitrary stage"
+git status
+git add DSIRE-API.code-workspace
+git commit --amend --no-edit
+git lag
+git status
+git commit --amend
+git staus
+git status
+git lag
+git status
+git lag
+git status
+git lag
+git status
+git add cf/default-layer.zip
+git status
+git commit --amend --no-edit
+git lag
+git commit --amend
+git status
+git add cf/DsireApiHandler.yaml cf/GitHubActionsCd.yaml
+git commit --amend --no-edit
+git lag
+git status
+git add --all; git commit -m "WIP"
+git tag -l v0.0.0-rc0
+git lag
+git lagg
+git l
+git log --tags
+git log
+git lag
+git tagas
+git tags
+git tag
+git tag -d v0.0.0-rc0
+git switch v0.0.0-rc0
+git tag v0.0.0-rc0
+git lag
+git push --tags
+git show v0.0.0-rc0
+git tag
+git tag -a
+git ls-remote origin
+git push
+git status
+git rereredo
+git push origin v0.0.0-rc0
+git rereredo
+git push origin v0.0.0-rc0
+git rereredo
+g l
+git switch main
+git switch -c backup
+git switch pilchd
+git l
+git switch 9b5a01e
+git switch -d 9b5a01e
+git switch -C main
+git push -f
+git status
+git switch pilchd
+g l
+git switch -d e598e7e
+git switch -C main
+git push
+git switch -d da32b12
+git switch -C main
+git push
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/hello/world
+while true; do tput cols; sleep .2; done
+echo
+while true; do tput cols; sleep .2; done
+nvm use 'lts/*'
+cd agnes/
+lds
+ls
+cd src/
+npm run build
+npm run build-development
+cd ..
+npm install
+npm run build
+cherrypie 
+git push origin v0.0.0-rc0
+git switch pilchd
+git rereredo
+git tag v1; git push origin --tags
+git rereredo
+git tag v2; git push origin --tags
+git rereredo
+git tag v1; git push origin --tags
+git tag v1; git push -f origin --tags
+git tag v3; git push origin --tags
+git rereredo
+git tag v4; git push origin --tags
+git rereredo
+git tag v5; git push origin --tags
+git rereredo
+git tag v6; git push origin --tags
+git restore HEAD~1 -- agnes/src/index.ts
+git restore --source=HEAD~1 -- agnes/src/index.ts
+git add agnes/src/index.ts
+git status
+git add --all
+git commit --amend
+git lag
+git reredo
+git lag
+git reset e598e7e
+git status
+git add .github/workflows/AwsDeploy.yaml .github/workflows/AwsUndeploy.yaml .gitignore
+git status
+cd agnes/
+git add package.json package-lock.json tsconfig.json ../.github/
+git status
+git commit -m "Deploy production GraphQL on version tag"
+git lag
+git push -f
+git ls-remote origin
+git tag v0.0.0-rc0
+git tag -d v0.0.0-rc0 
+git tag -d v{1,2,3,4,5,6}
+git tag
+git tag v0.0.0-rc0
+git push origin v0.0.0-rc0
+git status
+git add src/handlers.ts
+git add src/handlers/headers.ts
+git add src/index.ts
+git add src/headers.ts
+git status
+git commit --amend
+git status
+git restore schema.prisma
+git status
+git rebase -i e7278f834b47d795a65fe8b23f614ea4b87a3aaa
+git status
+git add src/handlers/approve.ts
+git add ../betty/src/approve.ts
+git status
+git commit --amend --no-edit
+git rebase --continue
+git status
+git push -f
+git remote origin -d v0.0.0-rc0
+git push origin -d v0.0.0-rc0
+git remote origin prune
+git remote prune --dry-run origin
+git tag v0.0.0-rc0
+git tag -d v0.0.0-rc0
+git tag v0.0.0-rc0
+git push --tags
+git status
+git add src/index.ts
+git commit --amend --no-edit
+git push -f
+git push origin -d v0.0.0-rc0
+git push --tags
+git status
+git add *
+git status
+git restore --staged src/db.ts
+git restore --staged src/db/introspection.ts
+git status
+git commit --amend --no-edit
+git push -f
+git push origin -d v0.0.0-rc0
+git push --tags
+git push origin -d v0.0.0-rc0
+git tag -d v0.0.0-rc0 
+git tag v0.0.0-rc0
+git push --tags
+git status
+git add ../.github/workflows/AWS-Deploy.yaml
+it l
+git l
+git status
+git commit --amend --no-edit
+git push -f
+git tag -d v0.0.0-rc0 
+git push origin -d v0.0.0-rc0
+git push --tags
+git push origin -d v0.0.0-rc0
+git tag v0.0.0-rc0
+git push --tags
+git status
+git add ../.github/workflows/AWS-Deploy.yaml
+git status
+git commit --amend --no-edit
+git status
+git push -f
+git switch -C main
+git push -f
+git tag -d v0.0.0-rc0 
+git push origin -d v0.0.0-rc0
+git tag v0.0.0-rc0
+git push --tags
+git remote prune --dry-run origin
+git remote prune origin
+git branch -a
+cd ..
+nvm use 'lts/*'
+http GET 192.168.4.140
+http POST 192.168.4.140/command test.json
+http POST 192.168.4.140/command < test.json
+http GET 192.168.4.140/command < test.json
+http POST 192.168.4.140/command < test.json
+PROPERTIES=$(arduino-cli compile --fqbn esp8266:esp8266:nodemcu --show-properties)
+PROPERTIES=$(arduino-cli compile --fqbn esp8266:esp8266:nodemcu --show-properties 'stacks')
+START=$(echo "$PROPERTIES" | grep "^menu.eesz.4M1M.build.spiffs_start" | cut -s -d= -f2)
+echo $START
+BLOCKSIZE=$(echo "$PROPERTIES" | grep "^menu.eesz.4M1M.build.spiffs_blocksize" | cut -s -d= -f2)
+echo $BLOCKSIZE
+END=$(echo "$PROPERTIES" | grep "^menu.eesz.4M1M.build.spiffs_end" | cut -s -d= -f2)
+START=$(echo "$PROPERTIES" | grep "^menu.eesz.4M1M.build.spiffs_start" | cut -s -d= -f2)
+SIZE=$($(($END - $START)))
+echo $END
+echo $START
+echo $((0x3FA000 - 0x300000))
+SIZE=$(echo "ibase16; ${END:2} - ${START:2}" | bc -q)
+sudo pacman -S bc
+SIZE=$(echo "ibase16; ${END:2} - ${START:2}" | bc -q)
+echo $SIZE
+echo $START
+echo $END
+SIZE=$(echo "ibase16;${END:2}-${START:2}" | bc -q)
+echo $SIZE
+while true; do tput cols; sleep .2; done
+sudo pacman -S aws-cli-v2
+sudo pacman -Sy
+sudo pacman -S aws-cli-v2
+npm run check
+nvm use 'lts/*'
+npm run check
+npm run build-development
+npm run package
+export DSIRE_API_DEPLOY_STAGE=pilchd
+npm run deploy
+export AWS_PROFILE=EnergySage
+tag AWS
+what
+tag AWS
+untag
+hush
+npm run deploy
+npm run build-development
+nmp run build
+npm run build
+npm run build-development
+npm run package
+npm run deploy
+
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+http POST https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/hello/world
+http DELETE https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/hello/world
+http OPTIONS https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/hello/world
+npm run clean
+npm run build
+npm run package
+npm run deploy
+http OPTIONS https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/hello/world
+http POST https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/hello/world
+npm run build
+npm run package
+npm run deploy
+http OPTIONS https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/hello/world
+http POST https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/hello/world
+npm run clean
+npm run build-development
+npm run package
+echo $DSIRE_API_DEPLOY_STAGE 
+npm run deploy
+ll dist/
+http POST https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/hello/world
+http POST https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql
+http POST https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphqll
+http POST https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/a
+http POST https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/
+npm run build-development
+npm run package
+npm run deploy
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/main/api/graphql/a
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/pilchd/api/graphql
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/pilchd/api/graphql/a
+npm run build-development && npm run package && npm run deploy
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/pilchd/api/graphql/a
+npm run build-development && npm run package && npm run deploy
+http GET https://wvt0mrkmwd.execute-api.us-east-1.amazonaws.com/pilchd/api/graphql/a
+npm run build-development && npm run package && npm run deploy
+http GET https://2rsp6p4mya.execute-api.us-east-1.amazonaws.com/main/api/verification/hello
+http GET https://2rsp6p4mya.execute-api.us-east-1.amazonaws.com/main/api/graphql
+
+npm run build-development && npm run package && npm run deploy
+mariadb -h ncsolardevmysql.crll8akiiuas.us-east-1.rds.amazonaws.com --ssl-ca=global-bundle.pem --ssl -P 3306 -u dsire-api -p
+git s
+git switch pilchd
+git status
+git commit -m "Initial documentation"
+git push
+cherrypie 
+cd ..
+git add README.md 
+git status
+git commit --amend --no-edit
+git push -f
+git add README.md 
+git commit --amend --no-edit
+git push -f
+git status
+git add --all
+git status
+git restore --staged agnes/src/db.ts
+git restore agnes/src/db/introspection.ts
+git restore --help
+git status
+git restore --staged agnes/src/db/introspection.ts
+git ss
+git restore --staged betty/src/emails/html.ts
+git ss
+git commit -m "Implement new README's development deployment"
+git tag -l v0.0.0-rc1
+git push
+git push origin v0.0.0-rc1
+git tag --help
+git tag v0.0.0-rc1
+git push origin v0.0.0-rc1
+git status
+git add betty/src/emails/html.ts 
+git ss
+git s
+git commit -m "Better HTML template literal tag"
+while true; do tput cols; sleep .2; done
+make compile
+make monitor
+make bu && make monitor
+make cu && make monitor
+acli monitor help
+make monitor
+make cu && make monitor
+make compile
+acli upload help
+acli upload --helphelp
+arduino-cli board details -b esp8266:esp8266:nodemcu
+acli compile --help
+acli monitor --help
+make compile
+mkspiffs --version
+make build
+echo $(8192 * 256 / 2)
+echo $((8192 * 256 / 2))
+make build
+make
+make -B
+lsusb
+make -B upload.target 
+make upload.target 
+make fs.spiffs
+make spiffs.target
+make -B spiffs.target
+esptool.py
+make -B spiffs.target
+esptool.py --help
+esptool.py write_flash --help
+make -B spiffs.target
+esptool.py write_flash --help
+make
+make monitor
+make
+make spiffs.target 
+make
+make monitor
+make
+make monitor 
+make
+make -B
+make monitor
+esptool.py write_flash --help
+make -B fs.spiffs
+make
+make -B fs.spiffs
+make -B spiffs.target
+make monitor
+make
+make monitor
+make fs.spiffs
+make -B fs.spiffs
+make
+make -B default.target
+make monitor
+make -B spiffs.target
+make -B
+make -B spiffs.target
+make monitor 
+mkspiffs --help
+mkspiffs -i fs.spiffs 
+mkspiffs -l fs.spiffs 
+
+~/.arduino15/packages/esp8266/tools/mkspiffs/3.1.0-gcc10.3-e5f9fec/mkspiffs -i fs.spiffs
+~/.arduino15/packages/esp8266/tools/mkspiffs/3.1.0-gcc10.3-e5f9fec/mkspiffs -l fs.spiffs
+make -B spiffs.target
+make monitor
+pwd
+find data -type f
+find data
+make clean
+make
+~/.arduino15/packages/esp8266/tools/mkspiffs/3.1.0-gcc10.3-e5f9fec/mkspiffs 
+/home/nic/.arduino15/packages/esp8266/tools/mkspiffs/3.1.0-gcc10.3-e5f9fec/mkspiffs
+make clean
+make compile.target
+make data.spiffs
+make -B data.spiffs
+make clean
+http GET https://2rsp6p4mya.execute-api.us-east-1.amazonaws.com/main/api/graphql
+http GET https://2rsp6p4mya.execute-api.us-east-1.amazonaws.com/pilchd/api/graphql
+http POST https://2rsp6p4mya.execute-api.us-east-1.amazonaws.com/pilchd/api/graphql
+while true; do tput cols; sleep .2; done
+e DSIRE_API_DEPLOY_STAGE=pilchd
+npm run build-development
+nvm use
+nvm use 'lts/*'
+npm run build-development
+npm run deploy
+e AWS_PROFILE='EnergySage'
+npm run deploy
+npm run build-development && npm run deploy
+env
+npm run build-development && npm run deploy
+npm run build-development && npm run package && npm run deploy
+npm install graphql-iso-date
+g s
+cd ..
+git add .github/workflows/AWS-{Sync,Deploy}.yaml
+git status
+git commit -m "Environment sync to separate workflow"
+cherrypie 
+git push
+git status
+git switch pilchd
+git tag v0.0.0-rc2
+git push origin v0.0.0-rc2
+git status
+git add .github/workflows/AWS-Sync.yaml && git commit --amend --no-edit && git tag test0 && git push -f --tags
+git status
+git push -f
+git tag test1
+git push --tags
+git tag vt1
+git push --tags
+git add .github/workflows/AWS-Sync.yaml && git commit --amend --no-edit && git tag vt3 && git push -f --tags
+git add .github/workflows/AWS-Sync.yaml && git commit --amend --no-edit && git tag vt4 && git push -f --tags
+git add .github/workflows/AWS-Sync.yaml && git commit --amend --no-edit && git tag vt5 && git push -f --tags
+git add .github/workflows/AWS-Sync.yaml && git commit --amend --no-edit && git tag vt6 && git push -f --tags
+git switch main
+git status
+git switch main
+pwd
+cd Projects/
+w
+http OPTIONS https://2rsp6p4mya.execute-api.us-east-1.amazonaws.com/pilchd/api/graphql
+nvm
+nvm use
+node
+cd src/
+node test.mjs
+npm list
+npm build-development
+npm run build-development
+npm run package
+e AWS_PROFILE='EnergySage'
+npm run deploy
+e DSIRE_API_DEPLOY_STAGE=pilchd
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+npm run build-development
+npm run package
+npm run deploy
+git show -w c4ae6b50377724da30550b3a70ee9acd22628121; exit 0
+while true; do tput cols; sleep .2; done
+cd ..
+g s
+git lag
+git config user.name
+git whoami
+git whoarei
+git lag
+git tag --help
+git tag -l
+git tag --help
+git tag
+git tag --help
+git tag
+git tag -d test0 test1 'v0.0.0-rc*'
+git tag -d v0.0.0-rc*
+git tag
+git tag -d v0.0.0-rc0 v0.0.0-rc1 v0.0.0-rc2
+git tag -d vt1 vt3 vt4 vt5 vt6
+git push -d vt5
+git push origin -d vt5
+git prune --help
+git status
+git lag
+git status
+git add .prettierrc
+git status
+git commit -m "Configure Prettier"
+git status
+git add --all
+git status
+git restore --help
+git restore -S README.md
+g s
+nvm use 'lts/*'
+npm list
+npm -g list
+cd agnes
+npm install
+npm uninstall ts-node
+npm install
+git status
+git add package.json tsconfig.json
+git status
+git add package-lock.json
+git status
+git commit -m "Improved GraphQL API design"
+git status
+git add ../README.md
+git commit -m "Update README"
+git push
+git push -f
+git lag
+git switch -C main
+git push
+git fetch
+git switch clean-documentation
+git remote prune
+git remote prune origin
+git tag
+git tag -d test0 test1 v0.0.0-rc0 v0.0.0-rc1 v0.0.0-rc2 vt1 vt3 vt4 vt6
+git tag
+git tag --help
+git lag
+git rebase -i 365c756
+git lag
+git rebase pilchd
+git status
+git rm src/handlers/GraphQL/types/pagination.ts
+git status
+git rebase --continue
+git status
+git lag
+git switch pilchd
+git merge clean-documentation
+git push
+git status
+git add --all
+git commit -m "Update README"
+git push
+git tag --help
+git tag -as -m "Version 1.0.0"
+git tag -s -m "Version 1.0.0"
+git tag -s
+git tag -s -m "Version 1.0.0" pilchd
+git tag
+git tag --help
+git tag -d pilchd
+git tag -s -m "Version 1.0.0" v1.0.0 pilchd
+git atg
+git tag
+git show v1.0.0
+git status
+git add --all
+git status
+git commit --amend --no-edit
+git tag -d v1.0.0
+git tag -s -m "Version 1.0.0" v1.0.0 pilchd
+git tag
+git push
+git push -f
+git push --follow-tags
+git status
+git push
+git switch -C main
+git push
+git switch -d 41886ef
+pwd
+cd ..
+bat .github/workflows/AwsDeploy.yaml
+git switch main
+git tag old-automated 41886ef
+git tag
+git push --tags
+git remote prune --help
+git remote prune origin
+git branch -a
+git branch -D backup clean-documentation emily emily-base pilchd pilchd-base preview/documentation
+git branch -a
+git prune
+clear
+make clean
+clear
+./fle
+make clean
+make
+./fle
+make clean
+mke
+make
+./fle
+make clean
+make
+make clean
+make
+make clean
+make
+./fle
+make clean
+make
+make clean
+make
+make clean
+make
+makew
+make
+make clean
+make
+make clean
+make
+make clean
+make
+./fle
+make
+make clean
+make
+make clean
+make
+./fle
+make
+./fle
+make
+make clean && make && ./fle
+make
+make clean && make && ./fle
+make clean; make && ./fle
+make clean
+make
+mkdir hi
+mkdir -p hi
+make clean
+make
+make clean
+make
+make clean
+make
+make clean
+make
+./fle
+make clean
+make
+make clean
+make
+./fle
+make clean
+make
+make clean
+./fle
+make clean
+./fle
+gdb --version
+./fl
+/fle
+./fle
+valgrind ./fle
+sudo pacman -S valgrind
+valgrind ./fle
+make
+./fle
+while true; do tput cols; sleep .2; done
+git init
+git config --global whoami
+git whoami
+git whoarei
+make
+pwd
+ls
+make
+gcc fle.cpp
+cd src
+gcc fle.cpp
+gcc fle.cpp -o a
+gcc -c fle.cpp -o a
+gcc -c adif.cpp -o b
+gcc a b -o fle
+g++
+make
+cd ..
+make
+./fle
+make
+make clean
+make
+./fle
+make
+make clean
+make
+make clean
+make
+make clea
+make clean
+make
+make clean
+make
+./fle
+make
+./fle
+make
+clear
+make clean
+make clean
+make debug
+make clean
+make debug
+make clean
+./fle
+make clean
+make
+make clean
+make
+clear
+make clean
+clear
+make clean
+make
+clear
+make clean
+clear
+./fle
+make clean
+make
+make clean
+make
+./fle
+make clean
+make
+./fle
+make
+./fle
+make clean
+clear
+make
+make clean
+cd src/FFLFP/
+g++ Parser.cpp
+make clean
+make cleasn
+make clean
+cd ..
+make clean
+make debug
+./fle
+make debug
+./fle
+nvm list
+nvm list-remote
+nvm list
+nvm current
+nvm reinstall-packages --help
+nvm which
+nvm lsit
+nvm list
+nvm unalias default
+nvm list
+nvm install 'lts/*'
+nvm list
+nvm alias node default
+nvm list
+nvm unalias default
+nvm list
+nvm alias default node
+nvm list
+nvm unalias node
+nvm unalias default
+nvm ls
+nvm use
+node --version
+npm --vesrion
+npm --version
+while true; do tput cols; sleep .2; done
+npm install --save-dev typescript
+npm publish --dry-run
+npm run build
+npm build
+npm run build
+npm publish --dry-run
+npm run build
+npm run clean
+npm run build
+npm publish --dry-run
+nvm use
+nvm deactivate
+nvm list
+node
+nvm unload
+nvm list
+echo $NVM
+echo [ -z "$NVM" ]
+env
+env | grep nvm,
+env | grep nvm
+echo ${env:NVM_DIR}
+echo $NVM_DIR
+command -v node
+! command -v node
+echo $?
+command -v node
+echo $?
+npm run clean
+nvm use
+npm run clean
+npm run build
+npm run build:debug
+npm run clean
+pwd
+npm run clean
+npm run build:debug
+npm run clean
+npm list
+nvm list
+env | node
+env | grep node
+ls $NVM_BIN
+nvm alias default 'lts/*'
+nvm list
+git whoami
+git whoarei
+git init
+env | grep nvm
+env | grep node
+node --version
+nvm --version
+node --version
+nvm list
+nvm unalias default
+node --version
+npm publish --dry-run 
+npm prefix -g
+nmp prefix
+npm prefix
+npm -g prefix
+npm [refix
+npm prefix
+npm -g prefix
+npm -g install node-check-update
+npm -g install nodemon
+npm -g install ts-node
+npm -g update
+npm -g list
+npm -g uninstall node-check-update
+npm -g install npm-check-updates
+npm -g list
+npm list
+ncu
+npx ncu
+while true; do tput cols; sleep .2; done
+ddc-bl 15
+node --version
+npm list
+git whoami
+git whoarei
+node --version
+npm list
+npm install --save-dev mocha
+npm install --save-dev chai
+npm --save-dev @types/chai
+npm i --save-dev @types/chai
+npm test
+npm uninstall mocha
+npm i -D ts-mocha
+npm i -D mocha
+npm install -D @types/mocha
+npm test
+npm uninstall mocha
+npx ts-mocha
+npm i -D ts-mocha
+npm test
+npm i -D mocha
+npm list
+npm uninstall ts-mocha
+npm i -D ts-node
+npm i -D mocha
+npm list -g
+npx ncu
+npm test
+ls
+npm test
+npx ts-node
+npm test
+npm lsit
+npm list
+npm test
+npm run build
+npm run clean
+npm test
+npm i -D tsconfig-paths
+while true; do tput cols; sleep .2; done
+what
+neofetch
+java --version
+javac Sym.java
+java Sym
+ls
+javac P1.java
+java P1
+javac P1.java
+java P1
+javac P1.java && java P1
+javac DuplicateSymNameException.java 
+javac EmptySymTableException.java 
+javac P1.java && java P1
+while true; do tput cols; sleep .2; done
+rm DuplicateSymNameException.class EmptySymTableException.class P1\$Redirect.class P1.class Sym.class SymTable.class 
+while true; do tput cols; sleep .2; done
+git status
+git switch -c pilchd
+git status
+git whoami
+git whoarei
+git status
+git add .vscode .gitignore
+git commit -m "VS Code nonsense"
+git add *.java
+git commit -m "Completed, handled more errors, simplified"
+git push
+git push --set-upstream origin pilchd
+git log
+git rebase -i ac747f31def
+g s
+git status
+ls'
+ls -a
+git rebase --abort
+g s
+git rebase -i ac747f31def
+rm .gitignore
+git status
+git add --all
+git commit --amend
+git rebase --continue
+git log
+git lag
+git push -f
+g s
+git status
+git push -f
+git push
+g s
+git add --all
+git commit --amend --no-edit
+git push -f
+ls
+la
+g s
+nano .gitignore
+g s
+javac *.java
+java Iperfer
+java Iperfer a a a aa a a a a a aa a
+java Iperfer -s
+java Iperfer -s -[
+java Iperfer -s -p
+java Iperfer -s -p alpha
+java Iperfer -s -p 1234
+javac *.java
+java Iperfer -s -p alpha
+javac *.java
+java Iperfer -s -p alpha
+java Iperfer -s -p 1234
+java Iperfer -h localhost -p 1234 -t 2
+java Iperfer -s -h localhost -p 1234 -t 2
+java Iperfer -c -h localhost -p 1234 -t 2
+java Iperfer -c -h localhost -p 1234 -t 1
+java Iperfer -c -h localhost -p 1234 -t 10
+java Iperfer -c -h localhost -p 1234 -t 5
+java Iperfer -c -h localhost -p 1234 -t
+java Iperfer -c -h localhost -p 1234 -t 5 a
+java Iperfer -c -h loc -p 1234 -t 5
+java Iperfer -c -h localhost -p 1234 -t 5
+java Iperfer -h localhost -p 1234 -t 5
+java Iperfer -c -h localhost -p aaa -t 5
+while true; do tput cols; sleep .2; done
+javac *.java
+java --version
+java P1
+java *.java
+rm *.class
+java *.java
+java P1.java
+java Sym.java
+javac *.java
+java P1
+java nitin
+java relapsed
+java stew
+javac *.java
+java P1
+javac *.java
+java P1
+cd sh/
+chmod +x emoji.sh
+./emoji.sh
+T="tofi --font='Noto Sans'"
+echo $T
+./emoji.sh
+tofi asda
+./emoji.sh
+sudo -e /usr/bin/bemoji
+bemoji aaaaaaaaaaa
+bemoji -p-pd-pa-spd
+command -V bemoji
+man tofi
+man 5 tofi
+man bemoji
+bemoji --help
+pwd
+ls
+chmod +x emoji.sh
+./emoji.sh
+cd
+cd .config/tofi/
+ls
+cat config
+./dots.sh generate
+ls .config/.arduino15/
+cd
+cd .config/
+cd
+./dots.sh generate
+cd mnt/dots/
+./dots.sh generate
+./dots.sh
+tofi laslasl
+cd sway/sh/
+chmod +x screenshot.sh

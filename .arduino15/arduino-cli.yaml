@@ -1,0 +1,30 @@
+board_manager:
+  additional_urls:
+    - https://arduino.esp8266.com/stable/package_esp8266com_index.json
+build_cache:
+  compilations_before_purge: 10
+  ttl: 720h0m0s
+daemon:
+  port: "50051"
+directories:
+  data: /home/nic/.arduino15
+  downloads: /home/nic/.arduino15/staging
+  # was /home/nic/Arduino
+  user: /home/nic/.arduino
+library:
+  enable_unsafe_install: false
+logging:
+  file: ""
+  format: text
+  level: info
+metrics:
+  addr: :9090
+  # was true
+  enabled: false
+output:
+  no_color: false
+sketch:
+  always_export_binaries: false
+updater:
+  # was true
+  enable_notification: false

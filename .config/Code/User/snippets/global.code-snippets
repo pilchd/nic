@@ -1,0 +1,27 @@
+{
+	"ConsoleLog": {
+        "description": "console.log",
+		"scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+		"prefix": "clog",
+		"body": "console.log($1);$0"
+	},
+	"ConsoleLogString": {
+        "description": "console.log string",
+		"scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+		"prefix": "clogs",
+		"body": "console.log(\"$1\");$0"
+	},
+	"ConsoleLogFormatString": {
+        "description": "console.log format string",
+		"scope": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+		"prefix": "clogf",
+		"body": "console.log(`$2: ${$1}`);$0"
+	},
+
+	"PrintLnString": {
+		"description": "System.out.println string",
+		"scope": ["java"],
+		"prefix": "prs",
+		"body": "System.out.println(\"$1\");$0"
+	}
+}

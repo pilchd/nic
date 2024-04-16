@@ -1,0 +1,12 @@
+set $output_main "HDMI-A-1"
+set $output_sub "HDMI-A-2"
+
+output $output_main {
+    resolution 1280x1024@75.025Hz
+    position 0 0
+}
+output $output_sub {
+    resolution 1280x1024@75.025Hz
+    transform 270
+    position 1280 176
+}
