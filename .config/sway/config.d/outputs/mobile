@@ -1,0 +1,11 @@
+set $output_main "eDP-1"
+set $output_sub "HDMI-A-2"
+
+output $output_main {
+    resolution 1920x1200@59.950Hz
+    position 0 0
+}
+output $output_sub {
+    resolution 1920x1080@60.000Hz
+    #position 1920 176
+}
