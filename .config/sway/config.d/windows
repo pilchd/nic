@@ -1,0 +1,25 @@
+for_window [app_id="float"] floating enable, border normal 1
+for_window [app_id="popup_tall"] floating enable, border normal 1, sticky enable, resize set 30 ppt 60 ppt
+
+
+for_window [app_id="firefox" title="Library"] floating enable, border normal 1, resize set 80ppt 90ppt
+
+for_window [app_id="pavucontrol"] floating enable, border pixel 1, sticky enable, resize set 40 ppt 60 ppt
+
+for_window [class="PrismLauncher"] floating enable, border normal 1, resize set 30ppt 60ppt
+for_window [class="Minecraft"] floating enable, border normal 1
+
+for_window [app_id="tqsl"] floating enable
+
+
+for_window {
+    [class="^steam$"] floating enable
+    [class="^steam$" title="^Steam$"] resize set 1200 800
+    [class="^steam$" title="^Friends List$"] resize set 350 600
+
+    # "Peggle Deluxe"
+    #[class="steam_app_3480"]
+    # "Peggle Nights"
+    #[class="steam_app_3540"]
+    [class="VVVVVV"] floating enable
+}

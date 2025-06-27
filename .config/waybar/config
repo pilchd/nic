@@ -1,0 +1,168 @@
+{
+    "layer": "bottom",
+    "output": "VGA-1",
+    "position": "bottom",
+    "height": 32,
+    "modules-left": [
+        "sway/workspaces",
+        "custom/sway-workspace-focused",
+        "sway/window"
+    ],
+    "modules-center": ["sway/mode"],
+    "modules-right": [
+        "battery",
+        "group/cpu",
+        "memory",
+        "network",
+        "temperature",
+        "pulseaudio",
+        "custom/wx",
+        "clock",
+        "idle_inhibitor"
+    ],
+    "name": "main",
+    "spacing": 16,
+    "start_hidden": false,
+    "fixed-center": false,
+
+    "sway/workspaces": {
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "Agnes": "🟥",
+            "Betty": "🟧",
+            "Clara": "🟨",
+            "Doris": "🟩",
+            "Elena": "🟦",
+            "Flora": "🟪",
+            "Gerty": "🟫",
+            "Heidi": "⬛",
+            "focused": "⚪"
+        },
+    },
+    "custom/sway-workspace-focused": {
+        "exec": "~/.config/waybar/sh/sway-workspace-focused.sh",
+        "format": "{}",
+        "tooltip": false
+    },
+    "sway/window": {
+        "max-length": 72,
+        "all-outputs": true
+    },
+
+    "sway/mode": {
+        "tooltip": false
+    },
+
+    "battery": {
+        "states": {
+            "full": 100,
+            "good": 80,
+            "fair": 50,
+            "poor": 20
+        },
+        "format-time": "{H}:{m}",
+        "tooltip-format": "{power:04.2f} {time} {cycles}"
+    },
+    "group/cpu": {
+        "orientation": "inherit",
+        "modules": [
+            "cpu",
+            "power-profiles-daemon"
+        ],
+        "drawer": {
+            "transition-duration": 150,
+            "transition-left-to-right": false,
+            "children-class": "drawer-left"
+        }
+    },
+    "cpu": {
+        "interval": 2,
+        "format": "<span color='#56B6C2'>{load:04.2f}</span>"
+    },
+    "power-profiles-daemon": {
+        "tooltip": false,
+        "format-icons": {
+            "performance": "<span color='#E06C75'>Performance</span>",
+            "balanced": "Balanced",
+            "power-saver": "<span color='#98C379'>Power Saver</span>"
+        },
+    },
+    "memory": {
+        "interval": 2,
+        "format": "<span color='#98C379'>{used:05.2f}</span>  <span color='#61AFEF'>{swapUsed:04.2f}</span>",
+        "tooltip": false
+    },
+    "temperature": {
+        "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input",
+        "format": "<span color='#E06C75'>{temperatureF:03}</span>",
+        "interval": 2,
+        "tooltip": false
+    },
+    "network": {
+        "interval": 2,
+        "format-ethernet": "<span color='#D19A66'>{ifname}</span>",
+        "on-click-left": "kitty --class popup --title iwctl iwctl",
+        "format-wifi": "{signalStrength:02}  <span color='#D19A66'>{essid}</span>",
+        "tooltip-format": "via <span color='#61AFEF'><b>{ipaddr}</b></span>/<span color='#D19A66'>{cidr}</span>\n↓ <span color='white'>{bandwidthDownBits}</span> | ↑ <span color='white'>{bandwidthUpBits}</span>"
+    },
+    "pulseaudio": {
+        "format": "{format_source} {volume} <span color='white'>{icon}</span>",
+        "format-muted": "{format_source} {volume} {icon}",
+        "format-source": "{volume} <span color='white'>M</span>",
+        "format-source-muted": "{volume} M",
+        "format-icons": {
+            "default": "S",
+            "headphone": "H"
+        },
+        "scroll-step": 2,
+        "on-click": "pavucontrol",
+        "on-click-middle": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+    },
+    "custom/wx": {
+        "exec": "~/.config/waybar/sh/wx.sh",
+        "return-type": "json",
+        "interval": 1200
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%m-%d %a  %R}",
+        "format-alt": "{:%m-%d %a  %T %Z}",
+        "timezones": [
+            "America/Chicago",
+            "America/Los_Angeles",
+            "America/Denver",
+            "America/New_York",
+            "Etc/UTC",
+            "Asia/Kolkata"
+        ],
+        "locale": "en_GB.UTF-8",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-middle": "mode",
+            "format": {
+                "months":   "<span color='#ABB2BF'><b>{}</b></span>",
+                "weekdays": "<span color='#D19A66'><b>{}</b></span>",
+                "days":     "<span color='#ABB2BF'>{}</span>",
+                "today":    "<span color='white'><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click-middle": "mode",
+            "on-click-right": "tz_up",
+            "on-scroll-down": "shift_up",
+            "on-scroll-up": "shift_down",
+        }
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "🌕",
+            "deactivated": "🌑"
+        },
+        "tooltip": false
+    }
+}

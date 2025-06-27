@@ -1,0 +1,63 @@
+[advice]
+    detachedHead = false
+[alias]
+    i = add
+    a = apply
+    q = blame
+    b = branch
+    cc = checkout
+    x = cherry-pick
+    w = clone
+    c = commit
+    redo = commit --amend --no-edit
+    reredo = !git add --update && git commit --amend --no-edit
+    rereredo = !git add --update && git commit --amend --no-edit && git push --force
+    x = config
+    whoami = config user.name
+    whoarei = config user.email
+    d = diff
+    ds = diff --staged
+    f = fetch
+    e = format-patch
+    g = grep
+    l = log --pretty=reference --graph
+    lag = log --pretty=fuller --graph --abbrev-commit --stat
+    lagg = log --pretty=fuller --graph --abbrev-commit --stat --first-parent
+    m = merge
+    y = pull
+    p = push
+    pp = push --force-with-lease
+    r = rebase
+    o = remote
+    k = reset
+    u = restore
+    z = revert
+    v = show
+    h = stash
+    ss = status
+    s = status --short --branch
+    j = switch
+    t = tag
+[color]
+    ui = auto
+[diff]
+    mnemonicPrefix = true
+    tool = nvimdiff
+[difftool]
+    prompt = false
+[difftool "nvimdiff"]
+    cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    allowedSignersFile = ~/.ssh/allowed_signers
+[init]
+    defaultBranch = main
+[pull]
+    rebase = true
+[push]
+    followTags = true
+[user]
+    name = Nic Pilcher
+    email = nic@pilchd.com
+    signingKey = ~/.ssh/id_ed25519

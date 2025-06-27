@@ -1,0 +1,118 @@
+/*
+One Dark Pro
+FG  #ABB2BF
+BG  #1E2127
+RED #E06C75
+YEL #D19A66
+GRN #98C379
+BLU #61AFEF
+CYA #56B6C2
+VIO #C678DD
+*/
+
+@define-color fg     #ABB2BF;
+@define-color bg     #1E2127;
+@define-color red    #E06C75;
+@define-color yellow #D19A66;
+@define-color green  #98C379;
+@define-color blue   #61AFEF;
+@define-color cyan   #56B6C2;
+@define-color violet #C678DD;
+
+@define-color bg-clear rgba(30, 33, 39, 0.98);
+@define-color clear rgba(0, 0, 0, 0);
+
+@keyframes urgent {
+    50% {opacity: 0;}
+}
+@keyframes mode {
+    50% {color: #E9969D;}
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    font-family: Noto Sans, sans-serif;
+    /*font-size: 10pt;*/
+    color: @fg;
+}
+*:hover {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+tooltip {
+    background-color: @bg-clear;
+    border: 1px solid black;
+}
+
+window#waybar.main {
+    background-color: @bg-clear;
+    border-top: 1px solid black;
+}
+.drawer-left .module {
+    margin-right: 8px;
+}
+
+#workspaces button {
+    font-weight: normal;
+    margin-left: 4px;
+}
+#workspaces button.urgent {
+    animation: urgent 1s infinite;
+}
+#custom-sway-workspace-focused {
+    font-weight: bold;
+}
+
+#mode {
+    font-weight: bold;
+    color: @red;
+    animation: 1s mode infinite;
+    animation-timing-function: steps(2);
+}
+
+#battery {
+    font-weight: bold;
+}
+#battery.full {
+    color: #98C379;
+}
+#battery.good {
+    color: #61AFEF;
+}
+#battery.fair {
+    color: #D19A66;
+}
+#battery.poor {
+    color: #E06C75;
+}
+#cpu {
+    font-weight: bold;
+}
+#power-profiles-daemon {
+    font-weight: normal;
+}
+#memory {
+    font-weight: bold;
+}
+#network {
+    font-weight: bold;
+}
+#temperature {
+    font-weight: bold;
+}
+#pulseaudio {
+    font-weight: bold;
+}
+#custom-wx {
+    font-weight: bold;
+}
+#clock {
+    font-weight: bold;
+}
+#idle_inhibitor {
+    margin-right: 4px;
+}

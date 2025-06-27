@@ -1,0 +1,3 @@
+set $output_main "LVDS-1"
+
+output $output_main resolution 1600x900@59.999Hz

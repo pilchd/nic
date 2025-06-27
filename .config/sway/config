@@ -1,0 +1,130 @@
+## Variables
+
+set $super Mod4
+
+set $Left  h
+set $Down  j
+set $Up    k
+set $Right l
+
+set $cmd_term kitty
+set $opt_term_class --class
+set $opt_term_title --title
+
+set $cmd_menu tofi
+
+set $cmd_play pw-play
+
+set $dir_theme /home/nic/.theme
+
+
+## Outputs
+
+# sets output_main, output_sub
+include config.d/outputs/main
+#include config.d/outputs/sub
+
+output $output_main bg $dir_theme/bg_main fill
+output $output_sub  bg $dir_theme/bg_sub  fill
+
+exec swayidle -w \
+    timeout 900 "swaymsg 'output * power off'" resume "swaymsg 'output * power on'" \
+    timeout 1200 "systemctl suspend" \
+
+
+## Inputs
+
+input type:keyboard {
+    repeat_delay 150
+    repeat_rate 40
+
+    # man 7 xkeyboard-config
+    # "Use keyboard LED to indicate modifiers":"Compose"
+    # "Caps Lock behavior":"Make Caps Lock an additional Esc"
+    # "Position of Compose key":"Right Alt"
+    # "Compatibility options":"Both Shifts together enable Shift Lock"
+    xkb_options mod_led:compose,caps:escape,compose:ralt,shift:both_shiftlock
+}
+
+input type:pointer accel_profile flat
+seat * hide_cursor 12000
+
+include config.d/inputs
+
+
+## Workspaces
+
+workspace 1:Agnes output $output_main
+workspace 2:Betty output $output_main
+workspace 3:Clara output $output_main
+workspace 4:Doris output $output_main
+workspace 5:Elena output $output_sub $output_main
+workspace 6:Flora output $output_sub $output_main
+workspace 7:Gerty output $output_sub $output_main
+workspace 8:Heidi output $output_sub $output_main
+
+
+## Theming
+
+seat * xcursor_theme capitaine-cursors 24
+font pango:"Noto Sans" Bold 8
+
+# ~/.config/gtk-4.0/settings.ini
+exec_always {
+    gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
+    gsettings set org.gnome.desktop.interface icon-theme 'Adwaita'
+    gsettings set org.gnome.desktop.interface font-name 'Noto Sans 10'
+    gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'
+    gsettings set org.gnome.desktop.interface cursor-size '24'
+}
+
+include config.d/themes/One-Dark-Pro
+
+
+## Windows
+
+default_border none
+default_floating_border normal 1
+
+floating_modifier $super normal
+
+bindsym $super+slash border none
+bindsym $super+shift+slash border normal 1
+
+include config.d/windows
+
+
+## Settings
+
+focus_follows_mouse no
+focus_on_window_activation smart
+focus_wrapping yes
+force_display_urgency_hint 2000
+hide_edge_borders --i3 smart
+workspace_auto_back_and_forth yes
+workspace_layout tabbed
+
+bindsym $super+shift+c reload
+
+
+## Keys
+
+include config.d/keys/sway
+include config.d/keys/de
+
+
+## Waybar
+
+bar swaybar_command waybar
+
+bindsym $super+z exec killall -SIGUSR1 waybar
+
+
+## Arch Linux systemd fragments
+
+include /etc/sway/config.d/*
+
+
+## Style points
+
+exec sleep 3 && $cmd_play $dir_theme/up
