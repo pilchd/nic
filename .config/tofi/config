@@ -1,0 +1,40 @@
+## Behavior
+
+text-cursor=false
+fuzzy-match=true
+
+
+## Style
+
+font=/usr/share/fonts/noto/NotoSans-Regular.ttf
+font-size=12
+
+background-color=#1E2127
+outline-width=0
+border-width=1
+border-color=#5C6370
+prompt-text="select"
+prompt-padding=32
+prompt-color=#5C6370
+placeholder-color=#ABB2BF
+input-color=#FFFFFF
+default-result-color=#ABB2BF
+selection-color=#FFFFFF
+selection-match-color=#98C379
+
+width=40%
+height=60%
+corner-radius=16
+
+padding-top=2
+padding-bottom=12
+padding-left=12
+padding-right=12
+
+
+# require-match
+# auto-accept-single
+# hide-input
+# hidden-character
+# prompt-text
+# placeholder-text

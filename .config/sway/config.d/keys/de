@@ -1,0 +1,101 @@
+## System
+
+bindsym --locked $super+Control+p            output *            power off
+bindsym --locked $super+Control+bracketleft  output $output_main power toggle
+bindsym --locked $super+Control+bracketright output $output_sub  power toggle
+
+bindsym --no-repeat $super+Escape exec "$cmd_play $dir_theme/logout & swaylock && $cmd_play $dir_theme/login"
+bindsym --locked --no-repeat $super+Control+Escape exec "systemctl suspend"
+bindsym --locked --no-repeat $super+Control+Alt+Escape exec "systemctl hibernate"
+
+
+## Launchers
+
+set $cmd_run swaymsg exec --
+
+bindsym $super+Return exec $cmd_run "$cmd_term"
+bindsym ctrl+alt+t exec $cmd_run "$cmd_term"
+
+bindsym $super+t exec $cmd_run "$cmd_term $opt_term_class 'kitty float'"
+bindsym $super+alt+Return exec $cmd_run "$cmd_term $opt_term_class 'kitty float'"
+bindsym ctrl+alt+shift+t exec $cmd_run "$cmd_term $opt_term_class 'kitty float'"
+
+bindsym $super+m exec pavucontrol
+
+bindsym $super+shift+Return mode "blastoff"
+mode "blastoff" {
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $super+shift+Return mode "default"
+    bindsym ctrl+c mode "default"
+
+    bindsym a exec $cmd_run "GDK_BACKEND=x11 audacity"; mode "default"
+    bindsym b exec $cmd_run "prismlauncher"; mode "default"
+    bindsym c exec $cmd_run "BC_ENV_ARGS=${HOME}/.config/bc/config $cmd_term $opt_term_class popup_tall $opt_term_title 'bc' bc"; mode "default"
+    bindsym d exec $cmd_run "dbeaver"; mode "default"
+    bindsym f exec $cmd_run "firefox --new-window"; mode "default"
+    bindsym g exec $cmd_run "gimp"; mode "default"
+    bindsym i exec $cmd_run "chromium"; mode "default"
+    bindsym m exec $cmd_run "prismlauncher"; mode "default"
+    bindsym n exec $cmd_run "$cmd_term $opt_term_class popup_tall $opt_term_title 'iwctl' iwctl"; mode "default"
+    bindsym o exec $cmd_run "osu-lazer"; mode "default"
+    bindsym p exec $cmd_run "steam"; mode "default"
+    bindsym s exec $cmd_run "cura"; mode "default"
+    bindsym v exec $cmd_run "inkscape"; mode "default"
+    bindsym w exec $cmd_run "wsjtx"; mode "default"
+    bindsym 2 exec $cmd_run "WINEPREFIX=/home/nic/.wine/aoe WINEARCH=win32 FREETYPE_PROPERTIES=truetype:interpreter-version=35 wine '/home/nic/.wine/aoe/drive_c/Program Files/Microsoft Games/Age of Empires II/age2_x1/age2_x1.5.exe' NOSTARTUP"; mode "default"
+}
+
+
+## Media
+
+set $cmd_vol-down pactl set-sink-volume @DEFAULT_SINK@ -2%
+set $cmd_vol-up pactl set-sink-volume @DEFAULT_SINK@ +2%
+set $cmd_vol-mute pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+set $cmd_mic-down pactl set-source-volume @DEFAULT_SOURCE@ -5%
+set $cmd_mic-up pactl set-source-volume @DEFAULT_SOURCE@ +5%
+set $cmd_mic-mute pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+bindsym --locked XF86AudioLowerVolume exec $cmd_vol-down
+bindsym --locked XF86AudioRaiseVolume exec $cmd_vol-up
+bindsym --locked XF86AudioMute exec $cmd_vol-mute
+
+bindsym --locked $super+ctrl+shift+7 exec $cmd_vol-down
+bindsym --locked $super+ctrl+shift+9 exec $cmd_vol-up
+
+bindsym XF86MonBrightnessDown exec $cmd_mic-down
+bindsym XF86MonBrightnessUp exec $cmd_mic-up
+bindsym XF86AudioMicMute exec $cmd_mic-mute
+
+bindsym $super+ctrl+alt+7 exec $cmd_mic-down
+bindsym $super+ctrl+alt+9 exec $cmd_mic-up
+
+bindsym --locked $super+7 exec playerctl previous
+bindsym --locked $super+8 exec playerctl play-pause
+bindsym --locked $super+9 exec playerctl next
+
+bindsym --locked $super+ctrl+7 exec playerctl volume .02-
+bindsym --locked $super+ctrl+9 exec playerctl volume .02+
+
+
+## DE
+
+exec wl-paste --watch cliphist store
+
+bindsym $super+v     exec ~/.config/sway/sh/clipboard.sh
+bindsym $super+alt+v exec cliphist wipe
+
+bindsym Print            exec ~/.config/sway/sh/screenshot.sh area   0
+bindsym alt+Print        exec ~/.config/sway/sh/screenshot.sh area   1
+bindsym $super+Print     exec ~/.config/sway/sh/screenshot.sh active 0
+bindsym $super+alt+Print exec ~/.config/sway/sh/screenshot.sh active 1
+
+bindsym $super+delete      exec makoctl dismiss
+bindsym $super+ctrl+delete exec makoctl dismiss -a
+
+bindsym $super+period     exec bemoji -n
+bindsym $super+alt+period exec bemoji -nt
+
+bindsym --locked $super+alt+y exec gammastep -P -O 2400
+bindsym --locked $super+alt+u exec pkill gammastep

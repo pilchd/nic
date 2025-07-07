@@ -1,0 +1,17 @@
+zoom_in  S-Up
+zoom_out S-Down
+
+zoom_fit     space
+zoom_fill    S-space
+zoom_default C-space
+
+scroll_left  Left 
+scroll_down  Down
+scroll_up    Up
+scroll_right Right
+
+next_img Next
+prev_img Prior
+
+jump_fwd  S-Next
+jump_back S-Prior

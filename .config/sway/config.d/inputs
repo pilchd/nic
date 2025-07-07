@@ -1,0 +1,11 @@
+# Logitech G303
+input 1133:49280:Logitech_Gaming_Mouse_G303 \
+    pointer_accel 0.0
+
+# Backpack Dell mouse
+input 1121:19733:USB_Optical_Mouse \
+    pointer_accel 0.2
+
+# BTS Dell mice
+input 1133:49174:Logitech_Optical_USB_Mouse \
+    pointer_accel 0.6

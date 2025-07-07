@@ -1,0 +1,13 @@
+set $output_main "Dell Inc. DELL P2421 BMW8L23"
+set $output_sub  "Dell Inc. DELL E171FPb 5W54037O2TNL"
+
+output $output_main {
+    resolution 1920x1200@59.950Hz
+    position 0 0
+}
+output $output_sub {
+    resolution 1280x1024@60.020Hz
+    position 1920 176
+}
+
+output HDMI-A-2 disable

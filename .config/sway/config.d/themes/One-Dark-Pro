@@ -1,0 +1,7 @@
+titlebar_border_thickness 1
+
+#                       border  background text    indicator child_border
+client.focused          #5C6370 #5C6370    #FFFFFF #98C379   #5C6370
+client.focused_inactive #1E2127 #1E2127    #ABB2BF #1E2127   #1E2127
+client.unfocused        #1E2127 #1E2127    #5C6370 #1E2127   #1E2127
+client.urgent           #1E2127 #E06C75    #ABB2BF #1E2127   #1E2127

@@ -1,0 +1,136 @@
+# -A --action
+# -Z --auto-zoom
+#    --cache-size
+# -P --cache-thumbnails
+# -f --filelist
+# -e --font
+# -C --fontpath
+# -F --fullscreen
+# -B --image-bg
+#    --info
+#    --keep-zoom-vp
+# -M --menu-font
+#    --no-jump-on-resort
+# -N --no-menus
+# -j --output-dir
+# -q --quiet
+# -z --randomize
+# -r --recursive
+# -n --reverse
+# -. --scale-down
+# -D --slideshow-delay
+# -S --sort
+# -| --start-at
+# -T --theme
+# -t --thumbnails
+# -~ --thumb-title
+# -^ --title
+#    --version-sort
+#    --zoom-step
+#
+# -W --limit-width
+# -s --stretch
+# -E --thumb-height
+# -Y --thumb-width
+#    --no-fehbg
+#
+# a [toggle_actions]
+# d [toggle_filenames
+# f [toggle_fullscreen]
+# h [toggle_pause]
+# i [toggle-info]
+# k [toggle-keep-vp]
+# L [save-filelist]
+# q [quit]
+# r [reload-image]
+# s [save-image]
+# _ [flip]
+# | [mirror]
+
+feh \
+    --action ';[copy basename] wl-copy "$(basename %F)"' \
+    --action1 ';[cp - ./_Job/] mkdir -p _Job && cp %F _Job/' \
+    --action2 ';[cp - ~/] cp %F ~/' \
+    --action5 ';[mkdir ./_Job/] mkdir -p _Job' \
+    --action9 ';[copy -] cat %F | wl-copy' \
+    -Z \
+    --cache-size 1024 \
+    -P \
+    -e 'Hack-Regular/9' \
+    -C /usr/share/fonts/TTF \
+    -C /usr/share/fonts/noto \
+    -B #323232 \
+    --info ';exiftool -q -q -d "%%Y-%%m-%%d %%H:%%M" -p ~/.config/exiftool/format.fmt %F' \
+    -M 'NotoSans-Regular/10' \
+    --no-jump-on-resort \
+    --no-menus \
+    -j _Job \
+    -q \
+    -. \
+    -~ '[%u/%l] %n (%w×%h)' \
+    -^ '[%u/%l] %n (%w×%h)' \
+    --version-sort \
+    --zoom-step 12 \
+    -W 1280 \
+    -s \
+    -E 64 \
+    -y 64 \
+    --no-fehbg \
+
+thumbs \
+    -Z \
+    --cache-size 1024 \
+    -P \
+    -e 'Hack-Regular/9' \
+    -C /usr/share/fonts/TTF \
+    -C /usr/share/fonts/noto \
+    -B #323232 \
+    --info ';exiftool -q -q -d "%%Y-%%m-%%d %%H:%%M" -p ~/.config/exiftool/format.fmt %F' \
+    -M 'NotoSans-Regular/10' \
+    --no-jump-on-resort \
+    --no-menus \
+    -j _Job \
+    -q \
+    -. \
+    -t \
+    -~ '[%u/%l] %n (%w×%h)' \
+    -^ '[%u/%l] %n (%w×%h)' \
+    --version-sort \
+    --zoom-step 12 \
+    -W 1280 \
+    -s \
+    -E 256 \
+    -y 256 \
+    --no-fehbg
+
+ss \
+    --action ';[copy basename] wl-copy "$(basename %F)"' \
+    --action1 ';[cp - ./_Job/] mkdir -p _Job && cp %F _Job/' \
+    --action2 ';[cp - ~/] cp %F ~/' \
+    --action5 ';[mkdir ./_Job/] mkdir -p _Job' \
+    --action9 ';[copy -] cat %F | wl-copy' \
+    -Z \
+    --cache-size 1024 \
+    -P \
+    -e 'Hack-Regular/9' \
+    -C /usr/share/fonts/TTF \
+    -C /usr/share/fonts/noto \
+    -F \
+    -B #000000 \
+    --info ';exiftool -q -q -d "%%Y-%%m-%%d %%H:%%M" -p ~/.config/exiftool/format.fmt %F' \
+    -M 'NotoSans-Regular/10' \
+    --no-jump-on-resort \
+    --no-menus \
+    -j _Job \
+    -q \
+    -. \
+    -D 12 \
+    -~ '[%u/%l] %n (%w×%h)' \
+    -^ '[%u/%l] %n (%w×%h)' \
+    --version-sort \
+    --zoom-step 12 \
+    -W 1280 \
+    -s \
+    -E 64 \
+    -y 64 \
+    --no-fehbg \

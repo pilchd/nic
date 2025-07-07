@@ -1,0 +1,57 @@
+## Global configuration options
+
+max-history=20
+sort=+time
+
+
+## Binding options
+
+on-button-left=dismiss
+on-button-middle=dismiss-group
+on-button-right=invoke-default-action
+
+
+## Style options
+
+font=Noto Sans 10
+
+background-color=#1E2127EE
+text-color=#ABB2BF
+
+width=400
+height=250
+margin=12
+padding=12
+
+border-size=1
+border-color=#5C6370
+border-radius=12
+progress-color=source #98C379
+max-icon-size=64
+icon-path=/usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/:/usr/share/icons/Adwaita/16x16/legacy/
+format=<span color='white'><b>%s</b></span>  <span color='#ABB2BF'>•</span>  <span color='white'>%a</span>\n%b
+default-timeout=0
+#ignore-timeout=1
+max-visible=12
+#output="DP-1"
+
+[mode=dnd]
+invisible=1
+
+[hidden]
+format=<span color='white'>%h</span> in the clip, <span color='white'>12</span> in the chamber
+
+[app-name=Spotify]
+border-color=#98C379EE
+max-icon-size=128
+default-timeout=7000
+
+
+[app-name=bash]
+default-timeout=2000
+
+[summary=Yay!]
+border-color=#98C379
+
+[summary=Boo!]
+border-color=#E06C75

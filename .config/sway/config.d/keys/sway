@@ -1,0 +1,201 @@
+## Focus
+
+bindsym $super+$Left focus left
+bindsym $super+Left focus left
+bindsym $super+$Down focus down
+bindsym $super+Down focus down
+bindsym $super+$Up focus up
+bindsym $super+Up focus up
+bindsym $super+$Right focus right
+bindsym $super+Right focus right
+
+bindsym $super+o focus output left
+bindsym $super+p focus output right
+
+
+## Movement
+
+bindsym $super+shift+$Left move left 10px
+bindsym $super+shift+Left move left 10px
+bindsym $super+shift+$Down move down 10px
+bindsym $super+shift+Down move down 10px
+bindsym $super+shift+$Up move up 10px
+bindsym $super+shift+Up move up 10px
+bindsym $super+shift+$Right move right 10px
+bindsym $super+shift+Right move right 10px
+
+bindsym $super+shift+Next move window to output right; focus output right
+bindsym $super+shift+Prior move window to output left; focus output left
+
+bindsym $super+shift+BackSpace move position center
+bindsym $super+shift+equal move position pointer
+
+
+## Workspaces
+
+bindsym $super+1 workspace 1:Agnes
+bindsym $super+2 workspace 2:Betty
+bindsym $super+3 workspace 3:Clara
+bindsym $super+4 workspace 4:Doris
+bindsym $super+q workspace 5:Elena
+bindsym $super+w workspace 6:Flora
+bindsym $super+e workspace 7:Gerty
+bindsym $super+r workspace 8:Heidi
+
+bindsym $super+shift+1 move container to workspace 1:Agnes
+bindsym $super+shift+2 move container to workspace 2:Betty
+bindsym $super+shift+3 move container to workspace 3:Clara
+bindsym $super+shift+4 move container to workspace 4:Doris
+bindsym $super+shift+q move container to workspace 5:Elena
+bindsym $super+shift+w move container to workspace 6:Flora
+bindsym $super+shift+e move container to workspace 7:Gerty
+bindsym $super+shift+r move container to workspace 8:Heidi
+
+bindsym $super+ctrl+$Right move container to workspace next
+bindsym $super+ctrl+$Left move container to workspace prev
+
+bindsym $super+semicolon workspace back_and_forth
+
+
+## Layout
+
+bindsym $super+bracketright split horizontal
+bindsym $super+bracketleft split vertical
+
+bindsym $super+0 layout toggle split
+bindsym $super+equal layout tabbed
+bindsym $super+minus layout stacking
+
+bindsym $super+f fullscreen
+
+bindsym $super+shift+backslash floating toggle
+bindsym $super+backslash focus mode_toggle
+
+bindsym $super+i sticky toggle
+
+bindsym $super+backspace focus parent
+
+
+## Scratchpad
+
+bindsym $super+shift+space move scratchpad
+bindsym $super+space scratchpad show
+
+
+## Modes
+
+bindsym $super+a mode "resize"
+mode "resize" {
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym ctrl+c mode "default"
+    bindsym $super+a mode "default"
+
+    bindsym $Left resize shrink width 10px
+    bindsym Left resize shrink width 10px
+    bindsym $Down resize shrink height 10px
+    bindsym Down resize shrink height 10px
+    bindsym $Up resize grow height 10px
+    bindsym Up resize grow height 10px
+    bindsym $Right resize grow width 10px
+    bindsym Right resize grow width 10px
+
+    bindsym shift+$Left resize shrink width 1px
+    bindsym shift+Left resize shrink width 1px
+    bindsym shift+$Down resize shrink height 1px
+    bindsym shift+Down resize shrink height 1px
+    bindsym shift+$Up resize grow height 1px
+    bindsym shift+Up resize grow height 1px
+    bindsym shift+$Right resize grow width 1px
+    bindsym shift+Right resize grow width 1px
+
+}
+
+bindsym $super+s mode "move"
+mode "move" {
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym ctrl+c mode "default"
+    bindsym $super+s mode "default"
+
+    bindsym ctrl+$Left move left 25px
+    bindsym ctrl+Left move left 25px
+    bindsym ctrl+$Down move down 25px
+    bindsym ctrl+Down move down 25px
+    bindsym ctrl+$Up move up 25px
+    bindsym ctrl+Up move up 25px
+    bindsym ctrl+$Right move right 25px
+    bindsym ctrl+Right move right 25px
+
+    bindsym $Left move left 10px
+    bindsym Left move left 10px
+    bindsym $Down move down 10px
+    bindsym Down move down 10px
+    bindsym $Up move up 10px
+    bindsym Up move up 10px
+    bindsym $Right move right 10px
+    bindsym Right move right 10px
+
+    bindsym shift+$Left move left 1px
+    bindsym shift+Left move left 1px
+    bindsym shift+$Down move down 1px
+    bindsym shift+Down move down 1px
+    bindsym shift+$Up move up 1px
+    bindsym shift+Up move up 1px
+    bindsym shift+$Right move right 1px
+    bindsym shift+Right move right 1px
+
+}
+
+bindsym $super+g mode "mark-jump"
+mode "mark-jump" {
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym ctrl+c mode "default"
+    bindsym $super+g mode "default"
+
+    bindsym 1 mark 1; mode "default"
+    bindsym 2 mark 2; mode "default"
+    bindsym 3 mark 3; mode "default"
+    bindsym 4 mark 4; mode "default"
+    bindsym 5 mark 5; mode "default"
+    bindsym 6 mark 6; mode "default"
+    bindsym 7 mark 7; mode "default"
+    bindsym 8 mark 8; mode "default"
+    bindsym 9 mark 9; mode "default"
+    bindsym 0 mark 0; mode "default"
+
+    bindsym q [con_mark="1"] focus; mode "default"
+    bindsym w [con_mark="2"] focus; mode "default"
+    bindsym e [con_mark="3"] focus; mode "default"
+    bindsym r [con_mark="4"] focus; mode "default"
+    bindsym t [con_mark="5"] focus; mode "default"
+    bindsym y [con_mark="6"] focus; mode "default"
+    bindsym u [con_mark="7"] focus; mode "default"
+    bindsym i [con_mark="8"] focus; mode "default"
+    bindsym o [con_mark="9"] focus; mode "default"
+    bindsym p [con_mark="0"] focus; mode "default"
+}
+
+
+## Windows
+
+bindsym $super+alt+BackSpace kill
+
+
+## Meta
+
+bindsym $super+ctrl+e exec swaynag -t warning \
+    -m "Now, THAT's what I call house cleanin'!" \
+    -B "🧨" '$cmd_play $dir_theme/dn ; swaymsg exit' \
+    -s "✋"
+
+bindsym $super+ctrl+r exec swaynag -t warning \
+    -m "Save it for a rainy day!" \
+    -B "🌠" 'reboot' \
+    -s "🌧️"
+
+bindsym $super+ctrl+s exec swaynag -t warning \
+    -m "I wish you would have believed me…" \
+    -B "🚁 Gas up the chopper" '$cmd_play $dir_theme/dn ; poweroff' \
+    -s "🏚️ Visit Jacob"

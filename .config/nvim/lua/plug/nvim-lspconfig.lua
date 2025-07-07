@@ -1,0 +1,72 @@
+return { "neovim/nvim-lspconfig" }
+
+--  {
+--    "neovim/nvim-lspconfig",
+--
+--    init = function()
+--        local options = {
+--          noremap = true,
+--          silent = true
+--        }
+--    end,
+--    config = function(lazyPlugin, opts)
+--      local lspconfig = require("lspconfig")
+--      local capabilities = vim.lsp.protocol.make_client_capabilities()
+--      capabilities.textDocument.completion.completionItem.snippetSupport = true
+--
+--      lspconfig.clangd.setup {
+--          capabilities = capabilities,
+--          handlers = handlers,
+--
+--
+--          filetypes = {"arduino", "cpp"}
+--
+--      }
+--
+--      lspconfig.cssls.setup {
+--        capabilities = capabilities,
+--        handlers = handlers,
+--
+--        init_options = {
+--          -- Use Prettier via conform.nvim
+--          provideFormatter = false
+--        }
+--      }
+--
+--      lspconfig.html.setup {
+--        capabilities = capabilities,
+--        handlers = handlers,
+--
+--        init_options = {
+--          -- Use Prettier via conform.nvim
+--          provideFormatter = false
+--        }
+--      }
+--
+--      lspconfig.yamlls.setup {
+--        capabilities = capabilities,
+--        handlers = handlers,
+--
+--        settings = {
+--          yaml = {
+--            schemas = {
+--              ["https://json.schemastore.org/github-workflow.json"]
+--                = "./github/workflows/*"
+--            }
+--          }
+--        }
+--      }
+--    end
+--  },
+--  {
+--    "pmizio/typescript-tools.nvim",
+--    dependencies = {
+--      "neovim/nvim-lspconfig",
+--      "nvim-lua/plenary.nvim"
+--    },
+--
+--    opts = {
+--      handlers = handlers
+--    }
+--  }
+--}
