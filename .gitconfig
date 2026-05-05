@@ -21,6 +21,7 @@
     e = format-patch
     g = grep
     l = log --pretty=reference --graph
+    lit = !curl parrot.live
     lag = log --pretty=fuller --graph --abbrev-commit --stat
     lagg = log --pretty=fuller --graph --abbrev-commit --stat --first-parent
     m = merge

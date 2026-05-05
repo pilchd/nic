@@ -1,6 +1,5 @@
 {
     "layer": "bottom",
-    "output": "VGA-1",
     "position": "bottom",
     "height": 32,
     "modules-left": [

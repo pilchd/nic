@@ -7,8 +7,9 @@ PASTIME_FILE=~/.pastime.txt
 command -v fortune &> /dev/null && command -v cowsay &> /dev/null && fortune | cowsay
 
 [[ -r $PASTIME_FILE ]] && while IFS=, read -r date time form; do
-    days=$((($(date -d "$date" +%s) - $(date +%s)) / (60 * 60 * 24) + 1))
-    (( days < -6 )) && continue
+    # poor man's ceil() for integer dividends?
+    days=$((($(date -d "$date" +%s) - $(date +%s) + (60 * 60 * 24) - 1) / (60 * 60 * 24)))
+    (( days < -7 + 1)) && continue
     (( days <= 0 )) && days="$(_sgr ':)' inc gre)"
 
     (( ${#time} > tab )) && tab=${#time}

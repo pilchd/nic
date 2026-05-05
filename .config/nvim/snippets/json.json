@@ -1,0 +1,32 @@
+{
+    "property_value": {
+        "prefix": "value",
+        "body": [
+            "\"${1:key}\": ${2:value},",
+            ""
+        ]
+    },
+    "property_string": {
+        "prefix": "string",
+        "body": [
+            "\"${1:key}\": \"${2:value}\",",
+            ""
+        ]
+    },
+    "property_array": {
+        "prefix": "array",
+        "body": [
+            "\"${1:key}\": [",
+            "\t$0",
+            "],"
+        ]
+    },
+    "property_object": {
+        "prefix": "object",
+        "body": [
+            "\"${1:key}\": {",
+            "\t$0",
+            "},"
+        ]
+    }
+}

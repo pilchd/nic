@@ -1,0 +1,32 @@
+{
+    "fn.arrow.array": {
+        "prefix": "fa",
+        "body": [
+            "(${1:...args}) => [$0]"
+        ]
+    },
+    "fn.arrow.object": {
+        "prefix": "fo",
+        "body": [
+            "(${1:...args}) => ({$0})"
+        ]
+    },
+    "fn.arrow.map": {
+        "prefix": "fm",
+        "body": [
+            "({${1:...args}}) => ({$0})"
+        ]
+    },
+
+    "fn.react": {
+        "prefix": "fc",
+        "body": [
+            "export function ${1:FunctionComponent}({${3:...args}}: ${1:FunctionComponent}Props) {",
+                "\t$0",
+            "}",
+            "export interface ${1:FunctionComponent}Props {",
+                "\t$2",
+            "}"
+        ]
+    }
+}

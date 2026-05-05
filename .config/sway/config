@@ -67,7 +67,7 @@ workspace 8:Heidi output $output_sub $output_main
 ## Theming
 
 seat * xcursor_theme capitaine-cursors 24
-font pango:"Noto Sans" Bold 8
+font pango:"Noto Sans" Bold 10
 
 # ~/.config/gtk-4.0/settings.ini
 exec_always {
@@ -128,3 +128,18 @@ include /etc/sway/config.d/*
 ## Style points
 
 exec sleep 3 && $cmd_play $dir_theme/up
+
+
+
+include config.d/*.conf
+
+bindgesture swipe:3:left workspace prev
+bindgesture swipe:3:right workspace next
+bindgesture swipe:4:left move window to workspace prev
+bindgesture swipe:4:right move window to workspace next
+
+bindgesture swipe:3:down scratchpad show
+bindgesture swipe:3:up scratchpad show
+
+bindgesture hold:4 floating toggle
+bindgesture swipe:4:up move window to scratchpad

@@ -2,6 +2,8 @@ alias P='bat'
 
 alias p='cat'
 
+alias cmd='command'
+
 alias c='cp'
 alias cr='cp -r'
 
@@ -9,6 +11,8 @@ alias bl='ddcutil setvcp 10'
 
 alias df='df -h'
 alias du='du -h'
+
+alias farm='dict -d wn'
 
 alias e="$EDITOR"
 
@@ -45,6 +49,14 @@ alias ?='echo ${PIPESTATUS[*]}'
 alias f='pushd'
 F() { pushd "$1" && k ; }
 alias j='popd'
+alias jj='popd ; popd'
+alias jjj='popd ; popd ; popd'
+alias jjjj='popd ; popd ; popd ; popd'
+alias jjjjj='popd ; popd ; popd ; popd ; popd'
+alias jjjjjj='popd ; popd ; popd ; popd ; popd ; popd'
+alias jjjjjjj='popd ; popd ; popd ; popd ; popd ; popd ; popd'
+alias jjjjjjjj='popd ; popd ; popd ; popd ; popd ; popd ; popd ; popd'
+alias jjjjjjjjj='popd ; popd ; popd ; popd ; popd ; popd ; popd ; popd ; popd'
 alias J='cd ../'
 alias JJ='cd ../../'
 alias JJJ='cd ../../../'
@@ -54,7 +66,7 @@ alias JJJJJJ='cd ../../../../../../'
 alias JJJJJJJ='cd ../../../../../../../'
 alias JJJJJJJJ='cd ../../../../../../../../'
 alias JJJJJJJJJ='cd ../../../../../../../../../'
-alias g='dirs -p | nl -v 0 -w 1'
+alias g='dirs -p | tac | nl -n rn -s "  " -v 0 -w 2 | tac | nl -n rn -s "  " -v 0 -w 2'
 alias G='dirs -c'
 
 alias smile='pw-play ~/.theme/smile'

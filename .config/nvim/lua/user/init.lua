@@ -1,5 +1,10 @@
-require("user.autocommand")
-require("user.keys")
-require("user.lsp")
-require("user.settings")
-require("user.usercommand")
+require "user.variables"
+require "user.autocommand"
+require "user.keymap"
+require "user.options"
+require "user.usercommand"
+
+require "user.fold"
+require "user.ft"
+require "user.kitty"
+require "user.lsp"

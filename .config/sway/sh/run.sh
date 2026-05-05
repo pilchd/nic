@@ -1,21 +1,32 @@
 #!/bin/sh
 
-RUN0=~/.theme/run0
-RUN1=~/.theme/run1
+chances=(
+    2767
+    32767
+)
+runners=(
+    ~/.theme/run1
+    ~/.theme/run0
+)
+sayings=(
+    "Don't be so silly!"
+    "Jambo Nintendo!"
+)
 
-PLAY='pw-cat -p'
-VOLUME=0.25
+play='pw-cat --volume=0.25 -p'
 
-TMP=$XDG_RUNTIME_DIR
 
-# ~95%
-if (( $RANDOM < 31000 )); then
-    echo 0 > ${TMP}/run.ner
-    $PLAY --volume=$VOLUME "$RUN0" &
-# ~5%
-else
-    echo 1 > ${TMP}/run.ner
-    $PLAY --volume=$VOLUME "$RUN1" &
-fi
+random=$RANDOM
+for idx in ${!chances[@]} ; do
+    if (($random <= ${chances[idx]})); then
+        export RUNNER_SAYING="${sayings[idx]}"
 
-echo $! > ${TMP}/run.pid
+        { sh -c "$*" <&3 3<&- & } 3<&0 ; pid_command=$!
+        $play "${runners[idx]}" & pid_runner=$!
+
+        wait $pid_command ; return=$?
+
+        kill $pid_runner
+        exit $return
+    fi
+done

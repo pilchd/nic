@@ -1,0 +1,9 @@
+{
+    "name": "pilchd",
+    "contributes": {
+        "snippets": [
+            { "language": ["javascript", "javascriptreact", "typescript", "typescriptreact"], "path": "./ecma.json" },
+            { "language": ["json"], "path": "./json.json" }
+        ]
+    }
+}

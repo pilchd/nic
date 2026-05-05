@@ -1,12 +1,18 @@
 #!/bin/sh
 
-~/.config/sway/sh/run.sh
-pid=$(< ${XDG_RUNTIME_DIR}/run.pid)
-runner=$(< ${XDG_RUNTIME_DIR}/run.ner)
+i_run=~/.config/sway/sh/run.sh
 
-[[ $runner == 0 ]] && prompt="Jambo Nintendo!"
-[[ $runner == 1 ]] && prompt="Don't be so silly!"
+item=$(cliphist list | $i_run 'fuzzel --dmenu --placeholder="<M-0> to clear" --mesg="$RUNNER_SAYING" --counter')
+mode=$?
 
-cliphist list | tofi --font='sans-serif' --prompt-text="$prompt" | ifne cliphist decode | wl-copy
-
-kill $pid
+case $mode in
+    0)
+        echo "$item" | cliphist decode | wl-copy
+    ;;
+    10)
+        echo "$item" | cliphist delete
+    ;;
+    19)
+        cliphist wipe
+    ;;
+esac

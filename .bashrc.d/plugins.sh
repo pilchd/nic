@@ -48,7 +48,7 @@ if [[ -r /usr/share/nvm/nvm.sh ]]; then
         source /usr/share/nvm/bash_completion
     fi
 
-    export NVM_DIR="${HOME}/.nvm"
+    export NVM_DIR="$HOME/.nvm/"
 fi
 
 # If nnn is available, source and configure it
@@ -58,14 +58,7 @@ if command -v nnn &> /dev/null; then
         source /usr/share/nnn/quitcd/quitcd.bash_sh_zsh
     fi
 
-    export NNN_BMS="s:$HOME/School/SP24"
-    export NNN_FIFO='/tmp/nnn.fifo'
-    # Don't auto-enter on single filter match:don't auto-advance:open only on enter
-    export NNN_OPTS='AJo'
-    export NNN_PLUG='p:preview-tui'
-    # Use trash-cli as rm
-    # TODO Check installed
-    export NNN_TRASH='1'
+    source ~/.config/nnn/environment.sh
 
     # Hidden files first
     alias n='LC_COLLATE=C n'

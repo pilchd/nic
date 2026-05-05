@@ -1,7 +1,7 @@
 ## System
 
 bindsym --locked $super+Control+p            output *            power off
-bindsym --locked $super+Control+bracketleft  output $output_main power toggle
+bindsym --locked --no-repeat $super+Control+bracketleft  output $output_main power toggle
 bindsym --locked $super+Control+bracketright output $output_sub  power toggle
 
 bindsym --no-repeat $super+Escape exec "$cmd_play $dir_theme/logout & swaylock && $cmd_play $dir_theme/login"
@@ -46,6 +46,27 @@ mode "blastoff" {
     bindsym 2 exec $cmd_run "WINEPREFIX=/home/nic/.wine/aoe WINEARCH=win32 FREETYPE_PROPERTIES=truetype:interpreter-version=35 wine '/home/nic/.wine/aoe/drive_c/Program Files/Microsoft Games/Age of Empires II/age2_x1/age2_x1.5.exe' NOSTARTUP"; mode "default"
 }
 
+#set $press ydotool key --delay 5
+#
+#bindsym $super+alt+c mode "crossword"
+#mode "crossword" {
+#    bindsym $super+alt+c mode "default"
+#
+#    #bindsym $super+space exec $cmd_run $press 57:1 57:0
+#
+#    bindsym $super+h exec $cmd_run $press 105:1 105:0
+#    bindsym $super+j exec $cmd_run $press 108:1 108:0
+#    bindsym $super+k exec $cmd_run $press 103:1 103:0
+#    bindsym $super+l exec $cmd_run $press 106:1 106:0
+#    bindsym shift+$super+h exec $cmd_run $press 105:1 105:0
+#    bindsym shift+$super+j exec $cmd_run $press 108:1 108:0
+#    bindsym shift+$super+k exec $cmd_run $press 103:1 103:0
+#    bindsym shift+$super+l exec $cmd_run $press 106:1 106:0
+#
+#    bindsym $super+u exec $cmd_run $press 102:1 102:0
+#    bindsym $super+i exec $cmd_run $press 107:1 107:0
+#}
+
 
 ## Media
 
@@ -64,8 +85,6 @@ bindsym --locked XF86AudioMute exec $cmd_vol-mute
 bindsym --locked $super+ctrl+shift+7 exec $cmd_vol-down
 bindsym --locked $super+ctrl+shift+9 exec $cmd_vol-up
 
-bindsym XF86MonBrightnessDown exec $cmd_mic-down
-bindsym XF86MonBrightnessUp exec $cmd_mic-up
 bindsym XF86AudioMicMute exec $cmd_mic-mute
 
 bindsym $super+ctrl+alt+7 exec $cmd_mic-down
@@ -81,10 +100,6 @@ bindsym --locked $super+ctrl+9 exec playerctl volume .02+
 
 ## DE
 
-exec wl-paste --watch cliphist store
-
-bindsym $super+v     exec ~/.config/sway/sh/clipboard.sh
-bindsym $super+alt+v exec cliphist wipe
 
 bindsym Print            exec ~/.config/sway/sh/screenshot.sh area   0
 bindsym alt+Print        exec ~/.config/sway/sh/screenshot.sh area   1
@@ -94,8 +109,9 @@ bindsym $super+alt+Print exec ~/.config/sway/sh/screenshot.sh active 1
 bindsym $super+delete      exec makoctl dismiss
 bindsym $super+ctrl+delete exec makoctl dismiss -a
 
-bindsym $super+period     exec bemoji -n
-bindsym $super+alt+period exec bemoji -nt
-
 bindsym --locked $super+alt+y exec gammastep -P -O 2400
 bindsym --locked $super+alt+u exec pkill gammastep
+
+
+## new
+

@@ -46,7 +46,7 @@ HISTIGNORE='&:[ ]*:?:??:???'
 ## Shell environment
 
 # Engineering department
-export BC_ENV_ARGS=/home/nic/.config/bc/config
+export BC_ENV_ARGS=~/.config/bc/config
 
 # RIP nano
 export EDITOR=nvim

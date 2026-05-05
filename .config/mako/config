@@ -26,7 +26,7 @@ padding=12
 border-size=1
 border-color=#5C6370
 border-radius=12
-progress-color=source #98C379
+progress-color=source #D3D3D3
 max-icon-size=64
 icon-path=/usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/:/usr/share/icons/Adwaita/16x16/legacy/
 format=<span color='white'><b>%s</b></span>  <span color='#ABB2BF'>•</span>  <span color='white'>%a</span>\n%b
@@ -38,6 +38,8 @@ max-visible=12
 [mode=dnd]
 invisible=1
 
+[grouped]
+format=<span color='white'><b>%s</b></span>  <span color='#ABB2BF'>•</span>  <span color='white'>%a</span>\n%b
 [hidden]
 format=<span color='white'>%h</span> in the clip, <span color='white'>12</span> in the chamber
 
@@ -55,3 +57,11 @@ border-color=#98C379
 
 [summary=Boo!]
 border-color=#E06C75
+
+[app-name=powermenu]
+anchor=center
+
+[app-name=brightness.sh]
+anchor=bottom-center
+outer-margin=32
+font=monospace 22

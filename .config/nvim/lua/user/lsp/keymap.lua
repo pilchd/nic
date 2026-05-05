@@ -1,0 +1,8 @@
+vim.keymap.set('n', "<Leader>e", function ()
+    vim.diagnostic.jump({ count = -1, float = true, severity = { min = "ERROR" } })
+end)
+vim.keymap.set('n', "<Leader>r", function ()
+    vim.diagnostic.jump({ count = 1, float = true, severity = { min = "ERROR" } })
+end)
+vim.keymap.set('n', "<Leader>E", function () vim.diagnostic.jump({ count = -1, float = true } ) end)
+vim.keymap.set('n', "<Leader>R", function () vim.diagnostic.jump({ count = -1, float = true } ) end)

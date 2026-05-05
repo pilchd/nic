@@ -1,11 +1,26 @@
-# Logitech G303
-input 1133:49280:Logitech_Gaming_Mouse_G303 \
+input type:pointer {
+    accel_profile flat
+}
+input type:touchpad {
+    accel_profile adaptive
+}
+
+input 2:10:TPPS/2_Elan_TrackPoint {
+    pointer_accel 0.185
+    scroll_factor 0.385
+}
+input 11311:40:SNSL0028:00_2C2F:0028_Touchpad {
+    click_method clickfinger
+    drag disabled
+    drag_lock disabled
+    dwt disabled
+    pointer_accel 0.142
+    scroll_factor 0.465
+}
+
+input 1133:45110:Pebble_M350s_Mouse {
+    pointer_accel -0.175
+}
+input 1133:16500:Logitech_G305 {
     pointer_accel 0.0
-
-# Backpack Dell mouse
-input 1121:19733:USB_Optical_Mouse \
-    pointer_accel 0.2
-
-# BTS Dell mice
-input 1133:49174:Logitech_Optical_USB_Mouse \
-    pointer_accel 0.6
+}
